@@ -1,6 +1,6 @@
 plugins {
     id("org.jetbrains.kotlin.jvm") version "2.1.20"
-    id("org.jetbrains.intellij.platform") version "2.10.0"
+    id("org.jetbrains.intellij.platform") version "2.10.4"
 }
 
 group = "com.agentport"
@@ -23,7 +23,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.9.0")
 
     intellijPlatform {
-        intellijIdeaCommunity("2025.3")
+        intellijIdea("2025.3")
         bundledPlugin("com.intellij.java")
         pluginVerifier()
         zipSigner()
