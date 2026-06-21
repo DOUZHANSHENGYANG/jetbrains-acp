@@ -16,6 +16,7 @@ object AgentRegistry {
         Agent("mistral",   "Mistral",         "mistral",   listOf("--acp")),
         Agent("qwen",      "Qwen",            "qwen",      listOf("--acp")),
         Agent("kiro",      "Kiro",            "kiro",      listOf("--acp")),
+        Agent("pi",        "Pi",              "npx",       listOf("-y", "pi-acp")),
     )
 
     fun detectAvailable(): List<Agent> = knownAgents.filter { isOnPath(it.command) }
